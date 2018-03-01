@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Кира Васильева](https://up.htmlacademy.ru/htmlcss/20/user/608659).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Кригер](https://htmlacademy.ru/profile/sergeikriger).
 
 ---
 
