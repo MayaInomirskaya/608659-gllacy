@@ -3,7 +3,7 @@
 * Студент: [Кира Васильева](https://up.htmlacademy.ru/htmlcss/20/user/608659).
 * Наставник: [Сергей Кригер](https://htmlacademy.ru/profile/sergeikriger).
 
----
+----
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
