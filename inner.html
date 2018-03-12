@@ -33,6 +33,41 @@
   			<li class="creamy">Сливочное</a></li>
 		</ul>
   		<!--Фильтр</h2>-->
+  		<section>
+  			<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+  				<ul>
+	  				<li class="filter-ice-cream">Сортировка:<select>
+	  					<option>по популярности</option>
+	  					<option>сначала недорогие</option>
+	  					<option>сначала дорогие</option>
+	  					<option>по жирности</option>
+	  				</select></li>
+	  				<li class="filter-ice-cream">Цена: 100 руб. - 500 руб.
+	  					<input type="range" name="" min="100" max="500" step="5">
+	  				</li>
+	  				<li class="filter-ice-cream">Жирность:
+	  					<ul>
+		  					<li><input type="radio" name="fatness" value="0%">0%</li>
+		  					<li><input type="radio" name="fatness"  value="до 10%" checked>до 10%</li>
+		  					<li><input type="radio" name="fatness" value="до 30%">до 30%</li>
+		  					<li><input type="radio" name="fatness" value="выше 30%">выше 30%</li>
+	  					</ul>
+	  				</li>
+	  				<li class="filter-ice-cream">Наполнители:
+	  					<ul>
+		  					<li><input type="checkbox" name="fillers"  value="шоколадные" checked>шоколадные</li>
+		  					<li><input type="checkbox" name="fillers"  value="сахарные присыпки" checked>сахарные присыпки</li>
+		  					<li><input type="checkbox" name="fillers" value="фрукты" >фрукты</li>
+		  					<li><input type="checkbox" name="fillers" value="сиропы" >сиропы</li>
+		  					<li><input type="checkbox" name="fillers" value="джемы" >джемы</li>	  					
+	  					</ul>
+	  				</li>
+	  				<li>
+	  					<button type="submit" value="Применить">Применить</button>
+	  				</li>
+  				</ul>
+  			</form>
+  		</section>
 		<div class="ice-cream">
 	  		<ul>
 	  			<li>
@@ -161,12 +196,33 @@
 			</ul>
 		</div>
 		<div class="htmlacademy">
-			<a class="logo_htmlacademy">
+			<a class="logo_htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
   			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип htmlacademy">
   		</a>
-  		<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017</p>
+  		<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
 		</div>
 	</footer> 
+	<section>
+		<h2 class="visually-hidden">Товары корзины</h2>
+		<ul>
+			<li>
+				<img src="img/cloue.svg" width="11" height="11"> <img src="img/1.jpg" width="33" height="33"> <p>Пломбир с апельсиновым джемом <span class="kg"> 1,5кг &#215; </span><span class="price-kg"> 200р </span><span class="total_2">300 руб.</span></p>
+			</li>
+			<li>
+				<img src="img/close.svg" width="11" height="11"> <img src="img/3.jpg" width="33" height="33"> <p>Клубничный пломбир с присыпкой из белого шоколада <span class="kg"> 1,5кг &#215; </span><span class="price-kg"> 300р </span> <span class="total_1">450 руб.</span></p>
+			</li>
+		</ul>
+		<p class="total">Итого: 750 руб.</p>
+		<form class="goods-box">
+			<a href="goods-box.html" value="Оформить заказ">Оформить заказ</a>
+		</form>
+	</section>
+	<section>
+		<h2 class="visually-hidden">Карточка товара наведения</h2>
+		<form >
+			<button type="submit" value="Быстрый просмотр">Быстрый просмотр</button>
+		</form>
+	</section>
 	
 </body>
 </html>
