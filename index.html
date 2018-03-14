@@ -29,22 +29,21 @@
   					<a class="search-link" href="user-search.html" aria-label="Поиск">
   						<img src="img/loupe.svg" width="17" height="17" area>
   					</a>
-  					<section class="send-form">
-						<h2 class="visually-hidden">Поиск</h2>
+  					<div class="send-form">
 						<form class="send" action="https://echo.htmlacademy.ru" method="post">
-							<input type="search" name="search" placeholder="Что ищем?" aria-label="Поле поиска">
+						<input type="search" name="search" placeholder="Что ищем?" aria-label="Поле поиска">
 						</form>
-					</section>	
+					</div>	
   				</li>
   				<li class="login-link"><a class="login-link" href="login.html"> Вход</a>
   					<form class="input-form" action="https://echo.htmlacademy.ru" method="post">
 						<p class="input">
-							<label class="visually-hidden">Введите адрес электронной почты</label>
-							<input type="email" name="email" placeholder="Электронная почта" aria-label="Введите адрес электронной почты"/>
+							<label for="email_link" class="visually-hidden">Введите адрес электронной почты</label>
+							<input id="email_link" type="email" name="email" placeholder="Электронная почта"/>
 						</p>
 						<p class="input">
-							<label class="visually-hidden">Введите пароль</label>
-							<input type="password" name="password" placeholder="Пароль" aria-label="Введите свой пароль"/>
+							<label for="password_link" class="visually-hidden">Введите пароль</label>
+							<input  id="password_link" type="password" name="password" placeholder="Пароль"/>
 						</p>
 						<button type="submit" value="Войти">Войти</button>
 						<ul class="help">
@@ -148,8 +147,8 @@
 	  		<!-- Форма 😎 -->
 	  		<form class="subscription" action="https://echo.htmlacademy.ru" method="post">
 	  			<p class="subscription_email">
-	  				<label class="visually-hidden">Введите электронную почту</label>
-	  				<input type="email" name="email" placeholder="Электронная почта">
+	  				<label for="subscription_email" class="visually-hidden">Введите электронную почту</label>
+	  				<input id="subscription_email" type="email" name="email" placeholder="Электронная почта">
 	  				<button type="submit" value="Отправить">Отправить</button>
 	  			</p>
 	  		</form>
@@ -163,10 +162,26 @@
 	<footer class="maiin-footer">
 		<div class="social">
 			<ul>
-				<li><a class="social-button" href="#" aria-label="Мы в Твитере">Твитер</a></li>
-				<li><a class="social-button" href="#" aria-label="Мы в Инстаграм">Инстаграм</a></li>
-				<li><a class="social-button" href="#" aria-label="Мы в Фейсбук">Фейсбук</a></li>
-				<li><a class="social-button" href="#" aria-label="Мы в ВКонтакте">ВКонтакте</a></li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в Твитере">
+						<img src="img/twitter.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в Инстаграм">
+						<img src="img/instagram.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в Фейсбук">
+						<img src="img/fb.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в ВКонтакте">
+						<img src="img/vk.svg">
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="info_partnership">
@@ -189,16 +204,16 @@
 		<b>Мы обязательно вам ответим!</b>
 		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="feedback-about-you">
-				<label class="visually-hidden">Введите ваше имя</label>
-				<input type="text" name="name" placeholder="Как вас зовут?" aria-label="Как Вас зовут?"/>
+				<label for="visually-hidden" class="visually-hidden">Введите ваше имя</label>
+				<input id="visually-hidden" type="text" name="name" placeholder="Как вас зовут?"/>
 			</p>
 			<p class="feedback-about-you">
-				<label class="visually-hidden">Введите вашу почту</label>
-				<input type="email" name="email" placeholder="Ваша почта для ответа?" aria-label="Ваша почта для ответа"/>
+				<label for="visually-hidden2" class="visually-hidden">Введите вашу почту</label>
+				<input id="visually-hidden2" type="email" name="email" placeholder="Ваша почта для ответа?"/>
 			</p>
 			<p class="feedback-text">
-				<label class="visually-hidden">Напишите нам что-нибудь</label>
-				<textarea name="comment" placeholder="Напишите что-нибудь" aria-label="Напишите что-нибудь"></textarea>
+				<label for="textarea" class="visually-hidden">Напишите нам что-нибудь</label>
+				<textarea id="textarea" name="comment" placeholder="Напишите что-нибудь"></textarea>
 			</p>
 			<button type="submit" value="Отправить">Отправить</button>
 		</form>

@@ -19,10 +19,16 @@
   				<li class="search-link"><img src="img/loupe.svg" width="17" height="17"></li>
   				<li class="login-link">Вход</li>
   				<li class="nav-cart-box">Пусто
-  					<section>
-						<h2 class="visually-hidden">Товары корзины</h2>						
+  					<div class="bucket">						
 						<form class="goods-box">
 							<table>
+								<tr>
+									<th></th>
+									<th><h3 class="visually-hidden">Картинка</h3></th>
+									<th><h3 class="visually-hidden">Описание</h3></th>
+									<th><h3 class="visually-hidden">Цена за 1,5 кг</h3></th>
+									<th><h3 class="visually-hidden">Итого</h3></th>									
+								</tr>
 								<tr>
 									<td class="close"><a href="#"><img src="img/cross-small.svg"></a></td>
 									<td class="mini_ice-cream"><img src="img/cloue.svg" width="11" height="11"> <img src="img/1.jpg" width="33" height="33"></td>
@@ -41,7 +47,7 @@
 							<p class="total_total">Итого: 750 руб</p>
 							<a class="button" href="goods-box.html" value="Оформить заказ">Оформить заказ</a>
 						</form>
-					</section>
+					</div>
   				</li>
   			</ul>
   		</nav>	
@@ -62,7 +68,7 @@
   			<form class="filter" action="https://echo.htmlacademy.ru" method="get">
   				<fieldset>
 	  				<legend>Сортировка:</legend>
-	  					<select class="sort">
+	  					<select class="sort" name="sort">
 		  					<option value="popular">по популярности</option>
 		  					<option value="cheap">сначала недорогие</option>
 		  					<option value="expensive">сначала дорогие</option>
@@ -71,26 +77,26 @@
   				</fieldset>
   				<fieldset>
 	  				<legend> Цена: 100 руб. - 500 руб.</legend>
-	  					<input type="range" name="" min="100" max="500" step="5">
-	  					<input type="range" name="" min="100" max="500" step="5">	  				
+	  					<input type="range" name="range" min="100" max="500" step="5">
+	  					<input type="range" name="range" min="100" max="500" step="5">	  				
   				</fieldset>
   				<fieldset>
 	  				<legend>Жирность:</legend> 
 	  					<ul>
-		  					<li><input type="radio" name="fatness" value="0%">0%</li>
-		  					<li><input type="radio" name="fatness"  value="до 10%" checked>до 10%</li>
-		  					<li><input type="radio" name="fatness" value="до 30%">до 30%</li>
-		  					<li><input type="radio" name="fatness" value="выше 30%">выше 30%</li>
+		  					<li><input type="radio" name="fatness" value="0">0%</li>
+		  					<li><input type="radio" name="fatness"  value="10" checked>до 10%</li>
+		  					<li><input type="radio" name="fatness" value="30">до 30%</li>
+		  					<li><input type="radio" name="fatness" value="31">выше 30%</li>
 	  					</ul>	  				
   				</fieldset>
   				<fieldset>
 	  				<legend> Наполнители:</legend>
 	  					<ul>
-		  					<li><input type="checkbox" name="fillers"  value="шоколадные" checked>шоколадные</li>
-		  					<li><input type="checkbox" name="fillers"  value="сахарные присыпки" checked>сахарные присыпки</li>
-		  					<li><input type="checkbox" name="fillers" value="фрукты" >фрукты</li>
-		  					<li><input type="checkbox" name="fillers" value="сиропы" >сиропы</li>
-		  					<li><input type="checkbox" name="fillers" value="джемы" >джемы</li>	  		
+		  					<li><input type="checkbox" name="fillers"  value="chocolate" checked>шоколадные</li>
+		  					<li><input type="checkbox" name="fillers"  value="sugar" checked>сахарные присыпки</li>
+		  					<li><input type="checkbox" name="fillers" value="fruit" >фрукты</li>
+		  					<li><input type="checkbox" name="fillers" value="syrups" >сиропы</li>
+		  					<li><input type="checkbox" name="fillers" value="jams" >джемы</li>	  		
 	  					</ul>	  				
 	  			</fieldset>	  			
   				<button type="submit" value="Применить">Применить</button>	  				
@@ -257,10 +263,26 @@
   	<footer class="maiin-footer">
 		<div class="social">
 			<ul>
-				<li><a class="social-button" href="#" aria-label="Мы в Твитере">Твитер</a></li>
-				<li><a class="social-button" href="#" aria-label="Мы в Инстаграм">Инстаграм</a></li>
-				<li><a class="social-button" href="#" aria-label="Мы в Фейсбук">Фейсбук</a></li>
-				<li><a class="social-button" href="#" aria-label="Мы в ВКонтакте">ВКонтакте</a></li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в Твитере">
+						<img src="img/twitter.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в Инстаграм">
+						<img src="img/instagram.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в Фейсбук">
+						<img src="img/fb.svg">
+					</a>
+				</li>
+				<li>
+					<a class="social-button" href="#" aria-label="Мы в ВКонтакте">
+						<img src="img/vk.svg">
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="info_partnership">
