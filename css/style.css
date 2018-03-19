@@ -11,7 +11,10 @@ body {
 
 	
 	background-color: #849d8f;
-	background-image: url(608659-gllacy/img/bg1.jpg);
+	background-image: url(../img/bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: 1045px 881px;
+	background-position: 50% 0;
 }
 /*все ссылки белые*/
 .site-navigation a,
@@ -24,33 +27,138 @@ body {
 {
 	color: #ffffff;
 }
-/*список списка
-без подчеркивания*/
-.inner-ice a{
-	text-decoration: none;
-	font-weight: normal;
-}
 
 .site-navigation a:hover {
 	background-color: #ffffff;
-	color: black;
+	color: #323232;
 	text-decoration: none;
-	/*display: inline;*/
+	line-height: 18px;
 }
+
+
+/*список списка
+без подчеркивания*/
+.inner-ice a {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.inner-new a {
+	font-weight: bold;
+
+}
+
 .inner-ice a:hover {
 	background-color: #fbded8;
+	
+
+}
+.user-navigation li a {
+	font-size: 14px;
+	line-height: 16px;
+	text-decoration: none;
 }
 
 
+.user-navigation li a:hover {
+	background-color: #ffffff;
+	color: #323232;
+}
+.help li {
+	text-decoration: underline;
+}
+.working-time {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.phone {
+	font-size: 22px;
+	line-height: 24px;
+}
+.slide {
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.raspberry h2,
+.chocolate h2 {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.raspberry p,
+.chocolate p {
+	font-size: 18px;
+} 
+
+.about,
+.contacts
+ {
+	color: #323232;
+	font-weight: normal;
+}
+.about {
+	background-image: url(../img/waffle.jpg);
+
+}
+.news_blog a{
+	color: #353535;
+	font-weight: normal;
+}
+.news_blog p,
+.distribution p
+{
+	color: #5a5a5a;
+	font-weight: normal;
+}
 
 
+.about h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
 
+.contacts p{
+	font-size: 14px;
+	line-height: 20px;
+}
+.contacts p b{
+	font-size: 18px;
+	line-height: 24px;
+}
+.info_partnership a{
+	font-size: 13px;
+	line-height: 18px;
+}
+.info_partnership a:nth-of-type(1){
+	font-weight: normal;
+}
 
-
-
+.htmlacademy p {
+	font-size: 12px;
+	line-height: 18px;
+}
 .inner-ice li {
 	display: none;
 }
+button {
+	background-color: #f16542;
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	box-shadow: 0 2px 5px 0 #9e4334;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+}
+
+
+
+
 
 
 li {
