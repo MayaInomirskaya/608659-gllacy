@@ -23,7 +23,9 @@ body {
 .ice-cream a,
 .news_blog a,
 .info_partnership a,
-.htmlacademy a
+.htmlacademy a,
+.way a,
+.pagination-item a
 {
 	color: #ffffff;
 	padding: 3px 10px;
@@ -42,11 +44,16 @@ body {
 .ice-cream a:active,
 .news_blog a:active,
 .info_partnership a:active,
-.htmlacademy a:active
+.htmlacademy a:active,
+.way a:hover,
+.way a:active,
  {
 	color: #ffbc9e;
 
 
+}
+.user-navigation img{
+	background-color: #a4b9ad;
 }
 
 .site-navigation a:hover {
@@ -54,7 +61,7 @@ body {
 	color: #323232;
 	text-decoration: none;
 	line-height: 18px;
-	padding: 0px 10px;
+	padding: 1px 10px;
 	border-radius: 30px;
 }
 
@@ -99,8 +106,22 @@ body {
 	background-color: #ffffff;
 	color: #323232;
 }
+.input-form {
+	background-color: #f8f7f4;
+	width: 313px;
+	height: 252px;
+}
 .help li {
 	text-decoration: underline;
+}
+
+.help li a {
+	color: #323232;
+	font-size: 13px;
+	line-height: 24px;
+}
+.help li a:hover{
+	color: #e84d37;
 }
 .working-time {
 	font-size: 14px;
@@ -177,6 +198,21 @@ body {
 .inner-ice li {
 	/*display: none;*/
 
+}
+.bucket {
+	background-color: #ffffff;
+	width: 570px;
+	height: 277px;
+	border-radius: 10px;
+}
+.bucket td {
+	color: #323232;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 16px;
+}
+.bucket span{
+	color: #9f9f9f;
 }
 button {
 	background-color: #f16542;
