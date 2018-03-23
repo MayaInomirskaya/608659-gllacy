@@ -1,5 +1,5 @@
 body {
-	margin: 0
+	margin: 0;
 	padding:0;
 
 	font-family: "Roboto", Aria, sans-serif;
@@ -16,113 +16,156 @@ body {
 	background-size: 1045px 881px;
 	background-position: 50% 0;
 }
-/*все ссылки белые*/
-.site-navigation a,
-.user-navigation a,
-.advertising a,
-.ice-cream a,
-.news_blog a,
-.info_partnership a,
-.htmlacademy a,
-.way a,
-.pagination-item a
-{
+
+
+/*Каталог Доставка и оплата ОКомпании
+обычное состояние */
+.site-navigation a {
+	line-height: 18px;
+	padding: 9px 14px;
 	color: #ffffff;
-	padding: 3px 10px;
-
+	
 }
-.site-navigation a:hover,
-.user-navigation a:hover,
-.advertising a:hover,
-.ice-cream a:hover,
-.news_blog a:hover,
-.info_partnership a:hover,
-.htmlacademy a:hover,
-.site-navigation a:active,
-.user-navigation a:active,
-.advertising a:active,
-.ice-cream a:active,
-.news_blog a:active,
-.info_partnership a:active,
-.htmlacademy a:active,
-.way a:hover,
-.way a:active,
- {
-	color: #ffbc9e;
-
-
-}
-.user-navigation img{
-	background-color: #a4b9ad;
+/*Каталог Доставка и оплата ОКомпании
+при наведении*/
+.site-navigation a:visited {
+	background-color: #d07058;
+	color: #ffffff;
 }
 
 .site-navigation a:hover {
-	background-color: #ffffff;
+	background-color: #f7f6f3;
 	color: #323232;
 	text-decoration: none;
 	line-height: 18px;
-	padding: 1px 10px;
-	border-radius: 30px;
+	padding: 11px 14px;
+	border-radius: 21px;
+
+}
+.site-navigation a:active {
+	background-color: #ededed;
+	box-shadow: inset 0 2px 2px #696969;
+	
+
 }
 
 
-/*список списка
-без подчеркивания*/
+/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
+ссылки без подчеркивания 
+без отступов
+шрифт темный*/
+ul.inner-ice {
+	/*display: none;*/
+
+}
 .inner-ice a {
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
-	background-color: #ffffff;
+	padding:0px;
 	color: #323232;
+	padding-left: 21px;
+}
+.inner-ice a:active {
+	box-shadow: none;
+}
+ ul.inner-ice{
+	list-style-type: none;
+	padding-top: 5px;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin: 0;
 }
 
+/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
+при наведении на элементы списка(не ссылки) */
+.inner-ice li:hover
+ {
+	background-color: #fbded8;
+	
+}
+
+.inner-ice ul li {
+	padding: 5px;
+}
+/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
+при наведении на ссылку*/
+.inner-ice a:hover {
+	background-color: #fbded8;
+	padding: 0px;
+	padding-left: 21px;
+		
+}
+/*белай фон где список*/
+.inner-ice {
+	width: 143px;
+	height: 169px;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	
+		
+
+}
+/*Новинки жирным шрифтом*/
 .inner-new a {
 	font-weight: bold;
 
 }
 
-.inner-ice a:hover {
-	background-color: #fbded8;
-	border-radius: 0px;
-	
-}
 
-.inner-ice {
-	background-color: #ffffff;
-	padding: 5px;
-	width: 125px;
+/*поиск,вход,корзина*/
+.nav-cart-box a,
+.login-link	a,
+.user-navigation svg{
+	background-color: #a4b9ad;
+	fill: #ffffff;
+} 
+.nav-cart-box a:hover,
+.login-link	a:hover,
+.user-navigation svg:hover{
+	background-color: #f8f7f4;
+	fill: #323232;
+} 
+.user-navigation li a:hover {
+	color: #323232;
 }
-
 
 .user-navigation li a {
 	font-size: 14px;
 	line-height: 16px;
 	text-decoration: none;
+	padding: 10px;
+}
+a.login-link,
+a.nav-cart-box {
+	border-radius: 40px; 
+}
+.search-link svg{
+	padding: 14px;
+	border-radius: 40px;
+
+}/*ссылки белый шрифт
+поиск вход карзина*/
+.user-navigation a {           
+	color: #ffffff;
+
+} 
+      
+.login-link a:hover {
+	background-color: #f8f7f4;
+	fill: #323232;
 }
 
+/*********************************************************/
 
-.user-navigation li a:hover {
-	background-color: #ffffff;
-	color: #323232;
-}
+/***************************************************************/
 .input-form {
 	background-color: #f8f7f4;
 	width: 313px;
 	height: 252px;
 }
-.help li {
-	text-decoration: underline;
-}
 
-.help li a {
-	color: #323232;
-	font-size: 13px;
-	line-height: 24px;
-}
-.help li a:hover{
-	color: #e84d37;
-}
 .working-time {
 	font-size: 14px;
 	line-height: 16px;
@@ -137,48 +180,225 @@ body {
 	line-height: 60px;
 }
 
-.raspberry h2,
-.chocolate h2 {
+button[type="submit"]  {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+	 
+  
+}
+
+/******************************НЕ ПОЛУЧАЕТСЯ*/
+button[type="submit"]:hover {
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+ 	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+}
+button[type="submit"]:active {
+	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+}
+
+
+.help a {
+	background-color: #f8f7f4 ;
+	color: #323232;
+}
+
+.help li a {
+	color: #323232;
+	font-size: 13px;
+	line-height: 24px;
+	text-decoration: underline;
+
+}
+.help li a:hover{
+	color: #e84d37;
+}
+
+
+
+
+
+button[type="button_slide"] {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+}
+button[type="button_slide"]:hover {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+}                               /*************************ТОЖЕ НЕ РАБОТАЕТ****/
+button[type="button_slide"]:hover {
+	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	border-radius: 30px;
+}
+
+
+
+.ice-cream img {
+	border-radius: 50%;
+} 
+/**************************************************************/
+.ice-cream a {
+	
+	color: #ffffff;
+
+}
+.ice-cream a:hover {
+	
+	color: #ffbc9e;
+	
+}
+
+/***************************************************************/
+
+.advertising h2 {
 	font-size: 35px;
 	line-height: 41px;
 }
-
-.raspberry p,
-.chocolate p {
+.advertising p {
 	font-size: 18px;
-} 
+	line-height: 22px;
+}
+.raspberry {
+	background-image: url(../img/raspberry.jpg);
+	width: 420px;
+	height: 229px;
+}
+.chocolate {
+	background-image: url(../img/chocolate.jpg);
+	width: 420px;
+	height: 229px;
+}
 
-.about,
-.contacts
+.advertising a.button {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+    padding: 7px 17px; 
+	border: 0px;
+	border-radius: 30px;
+  
+}
+.advertising a.button:hover {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+    padding: 7px 17px; 
+	border: 0px;
+	border-radius: 30px;
+  
+}
+.advertising a.button:active {	
+    background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+    padding: 7px 17px; 
+	border: 0px;
+	border-radius: 30px;
+  
+}
+
+.about {
+	background-image: url(../img/waffle.jpg);
+
+}
+.about h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.about
  {
 	color: #323232;
 	font-weight: normal;
 }
-.about {
-	background-image: url(../img/waffle.jpg);
-
+.news_blog {
+	background-image: url(../img/blog.jpg);
+	width: 420px;
+	height: 220px;
 }
 .news_blog a{
 	color: #353535;
 	font-weight: normal;
 }
-.news_blog p,
+.news_blog p
+{
+	color: #5a5a5a;
+	font-weight: normal;
+}
+
+.distribution {
+	width: 420px;
+	height: 220px;
+}
 .distribution p
 {
 	color: #5a5a5a;
 	font-weight: normal;
 }
 
-
-.about h3 {
-	font-size: 24px;
-	line-height: 30px;
+.contacts
+ {
+	color: #323232;
+	font-weight: normal;
 }
 
-.contacts p{
+.contacts p {
 	font-size: 14px;
 	line-height: 20px;
 }
+
+
 .contacts p b{
 	font-size: 18px;
 	line-height: 24px;
@@ -186,6 +406,10 @@ body {
 .info_partnership a{
 	font-size: 13px;
 	line-height: 18px;
+	color: #ffffff;
+}
+.info_partnership a:hover {
+	color: #ffbc9e;
 }
 .info_partnership a:nth-of-type(1){
 	font-weight: normal;
@@ -195,10 +419,27 @@ body {
 	font-size: 12px;
 	line-height: 18px;
 }
-.inner-ice li {
-	/*display: none;*/
-
+.htmlacademy p a  {
+	color: #ffffff;
+	font-weight: normal;
 }
+.htmlacademy p a:hover  {
+	color: #ffbc9e;
+	
+}
+
+
+.feedback b {
+	color: #323232;
+	font-weight: normal;
+}
+
+
+
+
+/*************************************************************************************************КАТАЛОГ******************************************************************************************************/
+
+
 .bucket {
 	background-color: #ffffff;
 	width: 570px;
@@ -214,16 +455,61 @@ body {
 .bucket span{
 	color: #9f9f9f;
 }
-button {
-	background-color: #f16542;
-	padding: 7px 17px; 
+
+
+
+.way a {
 	color: #ffffff;
-	border: 0px;
-	box-shadow: 0 2px 5px 0 #9e4334;
+}
+.way a:hover {
+	color: #ffbc9e;
+}
+/***********************************************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!********************/
+/*.creamy {         
+  	background-color: rgb(208, 112, 88);
+}*/
+
+
+.nav-cart p{
+	color: #323232;
+}
+
+
+.nav-cart a.button {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	font-size: 18px;
 	line-height: 24px;
-	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+    padding: 7px 17px; 
+	border: 0px;
 	border-radius: 30px;
+  
+}
+.nav-cart a.button:hover {
+	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+    padding: 7px 17px; 
+	border: 0px;
+	border-radius: 30px;
+  
+}
+.nav-cart a.button:active {	
+    background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+    padding: 7px 17px; 
+	border: 0px;
+	border-radius: 30px;
+  
 }
 
 
@@ -231,9 +517,10 @@ button {
 
 
 
-li {
-	list-style-type: none;
-}
+
+
+
+
 
 
 
