@@ -18,9 +18,28 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+li.site-navigation-list-item {
+	list-style-type: none;
+}
+
+
+
+
 /*Каталог Доставка и оплата ОКомпании
 обычное состояние */
-.site-navigation a {
+.site-navigation-list-item>a {
 	line-height: 18px;
 	padding: 9px 14px;
 	color: #ffffff;
@@ -28,12 +47,8 @@ body {
 }
 /*Каталог Доставка и оплата ОКомпании
 при наведении*/
-.site-navigation a:visited {
-	background-color: #d07058;
-	color: #ffffff;
-}
 
-.site-navigation a:hover {
+.site-navigation-list-item>a:hover {
 	background-color: #f7f6f3;
 	color: #323232;
 	text-decoration: none;
@@ -42,13 +57,12 @@ body {
 	border-radius: 21px;
 
 }
-.site-navigation a:active {
+.site-navigation-list-item>a:active {
 	background-color: #ededed;
 	box-shadow: inset 0 2px 2px #696969;
 	
 
 }
-
 
 /*Новинки Сливочные Щербеты Фруктовый лед Мелорин
 ссылки без подчеркивания 
@@ -56,8 +70,30 @@ body {
 шрифт темный*/
 ul.inner-ice {
 	/*display: none;*/
-
 }
+ ul.inner-ice{
+	list-style-type: none;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin: 0;
+}
+
+/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
+при наведении на элементы списка(не ссылки) */
+.inner-ice li {
+	padding: 5px;
+}
+.inner-ice li:hover
+ {
+	background-color: #fbded7;
+	
+}
+.inner-ice li:active
+ {
+ 	color: #f8f7f4;
+	background-color: #f6b5a5;	
+}
+
 .inner-ice a {
 	text-decoration: none;
 	font-weight: normal;
@@ -67,36 +103,19 @@ ul.inner-ice {
 	color: #323232;
 	padding-left: 21px;
 }
+/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
+при наведении на ссылку*/
+
 .inner-ice a:active {
 	box-shadow: none;
 }
- ul.inner-ice{
-	list-style-type: none;
-	padding-top: 5px;
-	padding-bottom: 0;
-	padding-left: 0;
-	margin: 0;
+
+/*Новинки жирным шрифтом*/
+.inner-new a {
+	font-weight: bold;
+
 }
 
-/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
-при наведении на элементы списка(не ссылки) */
-.inner-ice li:hover
- {
-	background-color: #fbded8;
-	
-}
-
-.inner-ice ul li {
-	padding: 5px;
-}
-/*Новинки Сливочные Щербеты Фруктовый лед Мелорин
-при наведении на ссылку*/
-.inner-ice a:hover {
-	background-color: #fbded8;
-	padding: 0px;
-	padding-left: 21px;
-		
-}
 /*белай фон где список*/
 .inner-ice {
 	width: 143px;
@@ -104,66 +123,51 @@ ul.inner-ice {
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	
-		
-
-}
-/*Новинки жирным шрифтом*/
-.inner-new a {
-	font-weight: bold;
 
 }
 
+/***************************************************************************************************************************************************************************/
 
 /*поиск,вход,корзина*/
-.nav-cart-box a,
-.login-link	a,
-.user-navigation svg{
-	background-color: #a4b9ad;
-	fill: #ffffff;
-} 
-.nav-cart-box a:hover,
-.login-link	a:hover,
-.user-navigation svg:hover{
-	background-color: #f8f7f4;
-	fill: #323232;
-} 
-.user-navigation li a:hover {
-	color: #323232;
-}
-
-.user-navigation li a {
+li.navigation-button {
+	list-style-type: none;
 	font-size: 14px;
 	line-height: 16px;
-	text-decoration: none;
-	padding: 10px;
 }
-a.login-link,
-a.nav-cart-box {
-	border-radius: 40px; 
-}
-.search-link svg{
-	padding: 14px;
-	border-radius: 40px;
 
-}/*ссылки белый шрифт
-поиск вход карзина*/
 .user-navigation a {           
 	color: #ffffff;
+	text-decoration: none;
 
 } 
-      
-.login-link a:hover {
-	background-color: #f8f7f4;
-	fill: #323232;
+.navigation-link {
+	background-color: #b0c0b7;
+	color: #ffffff;
+	fill: #ffffff;
+	
+
 }
+.navigation-link:hover {
+	background-color: #f8f7f4;
+	color: #323232;
+	fill: #323232;
+	
+
+}
+      
 
 /*********************************************************/
 
 /***************************************************************/
-.input-form {
+.input-form  {
 	background-color: #f8f7f4;
 	width: 313px;
 	height: 252px;
+	
+}
+.input-form-text {
+	font-size: 14px;
+	line-height: 24px;
 }
 
 .working-time {
@@ -175,14 +179,17 @@ a.nav-cart-box {
 	font-size: 22px;
 	line-height: 24px;
 }
-.slide {
+ul.slides {
+	list-style-type: none;
+}
+.slide-h3 {
 	font-size: 60px;
 	line-height: 60px;
 }
 
 button[type="submit"]  {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	padding: 7px 17px; 
 	color: #ffffff;
 	border: 0px;
@@ -190,11 +197,11 @@ button[type="submit"]  {
 	line-height: 24px;
 	font-weight: bold;
 	border-radius: 30px;
+	outline: none;
 	 
   
 }
 
-/******************************НЕ ПОЛУЧАЕТСЯ*/
 button[type="submit"]:hover {
     background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
@@ -205,10 +212,11 @@ button[type="submit"]:hover {
 	line-height: 24px;
 	font-weight: bold;
 	border-radius: 30px;
+	outline: none;
 }
 button[type="submit"]:active {
 	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 	padding: 7px 17px; 
 	color: #ffffff;
 	border: 0px;
@@ -216,7 +224,20 @@ button[type="submit"]:active {
 	line-height: 24px;
 	font-weight: bold;
 	border-radius: 30px;
+	outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .help a {
@@ -227,7 +248,7 @@ button[type="submit"]:active {
 .help li a {
 	color: #323232;
 	font-size: 13px;
-	line-height: 24px;
+	line-height: 16px;
 	text-decoration: underline;
 
 }
@@ -236,48 +257,68 @@ button[type="submit"]:active {
 }
 
 
-
-
-
-button[type="button_slide"] {
+button.button-slider  {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	padding: 7px 17px; 
 	color: #ffffff;
 	border: 0px;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 32px;
+	line-height: 44px;
 	font-weight: bold;
 	border-radius: 30px;
+	outline: none;
+	 
+  
 }
-button[type="button_slide"]:hover {
-	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+
+button.button-slider:hover {
+    background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-	padding: 7px 17px; 
+ 	padding: 7px 17px; 
 	color: #ffffff;
 	border: 0px;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 32px;
+	line-height: 44px;
 	font-weight: bold;
 	border-radius: 30px;
-}                               /*************************ТОЖЕ НЕ РАБОТАЕТ****/
-button[type="button_slide"]:hover {
-	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
-	padding: 7px 17px; 
-	color: #ffffff;
-	border: 0px;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: bold;
-	border-radius: 30px;
+	outline: none;
 }
+button.button-slider:active {
+	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+	padding: 7px 17px; 
+	color: #ffffff;
+	border: 0px;
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: bold;
+	border-radius: 30px;
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 .ice-cream img {
 	border-radius: 50%;
 } 
+
 /**************************************************************/
 .ice-cream a {
 	
@@ -287,10 +328,53 @@ button[type="button_slide"]:hover {
 .ice-cream a:hover {
 	
 	color: #ffbc9e;
-	
+
 }
 
+
+
+/********************************************************************hit*************************************************/
+
+
+
+li.list-item-ice-cream {
+	position: relative;
+	list-style-type: none;
+}
+.list-item-ice-cream:hover {
+	position: relative;
+	background-color: #9db1a5;
+}
+.price {
+	position: absolute;
+	bottom: 60px;
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.hit {
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /***************************************************************/
+ul.ul-advertising {
+	list-style-type: none;
+}
 
 .advertising h2 {
 	font-size: 35px;
@@ -310,8 +394,8 @@ button[type="button_slide"]:hover {
 	width: 420px;
 	height: 229px;
 }
-
-.advertising a.button {
+/****************************************ссылки с классом кнопка *****************************************/
+ a.button {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	font-size: 18px;
@@ -323,7 +407,7 @@ button[type="button_slide"]:hover {
 	border-radius: 30px;
   
 }
-.advertising a.button:hover {
+a.button:hover {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
 	font-size: 18px;
@@ -335,7 +419,7 @@ button[type="button_slide"]:hover {
 	border-radius: 30px;
   
 }
-.advertising a.button:active {	
+a.button:active {	
     background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 	font-size: 18px;
@@ -362,16 +446,21 @@ button[type="button_slide"]:hover {
 	color: #323232;
 	font-weight: normal;
 }
-.news_blog {
+li.about-list-item {
+	list-style-type: none;
+}
+.news-blog {
 	background-image: url(../img/blog.jpg);
 	width: 420px;
 	height: 220px;
 }
-.news_blog a{
+.news-blog a{
 	color: #353535;
 	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
 }
-.news_blog p
+.news-blog p
 {
 	color: #5a5a5a;
 	font-weight: normal;
@@ -399,19 +488,62 @@ button[type="button_slide"]:hover {
 }
 
 
-.contacts p b{
+.contacts b{
 	font-size: 18px;
 	line-height: 24px;
 }
-.info_partnership a{
+
+
+li.social-network {
+	list-style-type: none;
+}
+.social-button-link {	
+	fill: #e6ebe9;
+}
+
+
+.social-button-link:hover {	
+	fill: #ffffff;
+	
+}
+
+.social-button-link:active {	
+	fill: #e9e9e9;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li.info-partnership-link {
+	list-style-type:none;
+}
+
+.info-partnership a{
 	font-size: 13px;
 	line-height: 18px;
 	color: #ffffff;
 }
-.info_partnership a:hover {
+.info-partnership a:hover {
 	color: #ffbc9e;
 }
-.info_partnership a:nth-of-type(1){
+.info-partnership a:nth-of-type(1){
 	font-weight: normal;
 }
 
@@ -432,50 +564,70 @@ button[type="button_slide"]:hover {
 .feedback b {
 	color: #323232;
 	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
 }
 
+
+.feedback-form input,
+.feedback-form textarea {
+	font-size: 16px;
+	line-height: 24.3px;
+	border-color: #e9e9e9;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+	font-size: 16px;
+	line-height: 24.3px;
+	border-color: #999999;
+}
+
+.feedback-form input:active,
+.feedback-form textarea:active {
+	font-size: 16px;
+	line-height: 24.3px;
+
+	
+}
 
 
 
 /*************************************************************************************************КАТАЛОГ******************************************************************************************************/
 
 
-.bucket {
+.basket {
 	background-color: #ffffff;
 	width: 570px;
 	height: 277px;
 	border-radius: 10px;
 }
-.bucket td {
+.basket td {
 	color: #323232;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
 }
-.bucket span{
+.basket span{
 	color: #9f9f9f;
 }
 
 
 
-.way a {
-	color: #ffffff;
-}
-.way a:hover {
-	color: #ffbc9e;
-}
 /***********************************************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!********************/
 /*.creamy {         
   	background-color: rgb(208, 112, 88);
 }*/
 
 
-.nav-cart p{
+.basket p{
 	color: #323232;
+	font-size: 15px;
+	line-height: 18px;
 }
 
 
-.nav-cart a.button {
+.basket a.button {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 	font-size: 18px;
@@ -487,7 +639,7 @@ button[type="button_slide"]:hover {
 	border-radius: 30px;
   
 }
-.nav-cart a.button:hover {
+.basket a.button:hover {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
 	font-size: 18px;
@@ -499,7 +651,7 @@ button[type="button_slide"]:hover {
 	border-radius: 30px;
   
 }
-.nav-cart a.button:active {	
+.basket a.button:active {	
     background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
     box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 	font-size: 18px;
@@ -515,9 +667,100 @@ button[type="button_slide"]:hover {
 
 
 
+ul.way {
+	list-style-type: none; 
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+}
+.way a {
+	color: #ffffff;
+
+}
+.way a:hover {
+	color: #ffbc9e;
+}
+
+.head-filter {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.filter legend  {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal;
+}
+
+
+.sort {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.radio,
+.checkbox {
+	font-size: 16px;
+	line-height: 18px;
+}
+/**************************************************????????????????????????????????*****************/
+button.button {
+
+	font-size: 16px;
+	line-height: 18px;	
+  	border-style: solid;
+  	border-width: 2px;
+  	border-color: rgb(255, 255, 255) rgb(255, 255, 255);
+  	background-color: rgba(255, 255, 255, 0) rgb(255, 255, 255);
+  
+
+}
+/*************************************************************************/
+
+
+ul.title-list-radio{
+	list-style-type: none;
+}
 
 
 
+ul.title-list-checkbox {
+	list-style-type: none;
+}
+
+
+
+
+
+li.pagination-item {
+	list-style-type: none;
+}
+
+.pagination-item a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+
+.pagination-item a:hover{
+	color: #ffffff;
+	background-color: #9db1a5;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
+.pagination-item a:active{
+	color: #323232;
+	background-color: #ffffff;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+}
 
 
 
