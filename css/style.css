@@ -11,14 +11,16 @@ body {
 
 	
 	background-color: #849d8f;
+	
+}
+
+
+.page-index {
 	background-image: url(../img/bg1.jpg);
 	background-repeat: no-repeat;
 	background-size: 1045px 881px;
 	background-position: 50% 0;
 }
-
-
-
 
 
 
@@ -68,6 +70,21 @@ li.site-navigation-list-item {
 ссылки без подчеркивания 
 без отступов
 шрифт темный*/
+
+
+hr {
+	height: 1px;
+	}
+
+.hr-inner-ice {
+	color: #d1d0ce;
+	width: 128px;
+}
+.hr-basket {
+	color: #cacac7;
+	width: 510px;
+}
+
 ul.inner-ice {
 	/*display: none;*/
 }
@@ -184,7 +201,7 @@ ul.slides {
 }
 .slide-h3 {
 	font-size: 60px;
-	line-height: 60px;
+	line-height: 60.35px;
 }
 
 button[type="submit"]  {
@@ -245,17 +262,29 @@ button[type="submit"]:active {
 	color: #323232;
 }
 
-.help li a {
+.help a {
 	color: #323232;
 	font-size: 13px;
 	line-height: 16px;
 	text-decoration: underline;
 
 }
-.help li a:hover{
+.help a:hover{
 	color: #e84d37;
 }
 
+
+
+
+
+.switch {
+	color: #ffffff;
+	border-radius: 50%;
+}
+.switch.active {
+	background-color: #ffffff;
+
+}
 
 button.button-slider  {
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -311,10 +340,6 @@ button.button-slider:active {
 
 
 
-
-
-
-
 .ice-cream img {
 	border-radius: 50%;
 } 
@@ -336,7 +361,9 @@ button.button-slider:active {
 /********************************************************************hit*************************************************/
 
 
+.strawberry-img {
 
+}
 li.list-item-ice-cream {
 	position: relative;
 	list-style-type: none;
@@ -465,7 +492,9 @@ li.about-list-item {
 	color: #5a5a5a;
 	font-weight: normal;
 }
-
+.distribution-content {
+	background-color: #f8f7f4;
+}
 .distribution {
 	width: 420px;
 	height: 220px;
@@ -480,6 +509,9 @@ li.about-list-item {
  {
 	color: #323232;
 	font-weight: normal;
+	background-color: #fefefe;
+	width: 302px;
+	height: 305px;
 }
 
 .contacts p {
@@ -560,7 +592,11 @@ li.info-partnership-link {
 	
 }
 
-
+.feedback {
+	background-color: #f8f7f4;
+	width: 478px;
+	height: 443px;
+}
 .feedback b {
 	color: #323232;
 	font-weight: normal;
@@ -594,7 +630,12 @@ li.info-partnership-link {
 
 
 /*************************************************************************************************КАТАЛОГ******************************************************************************************************/
-
+.site-navigation-list-item-active {
+	background-color: #d07058;
+	color: #ffffff;
+	border-radius: 21px;
+	text-decoration: none;
+}
 
 .basket {
 	background-color: #ffffff;
@@ -704,15 +745,50 @@ ul.way {
 	line-height: 18px;
 }
 /**************************************************????????????????????????????????*****************/
-button.button {
+.button-apply[type="submit"] {
 
 	font-size: 16px;
 	line-height: 18px;	
   	border-style: solid;
   	border-width: 2px;
+  	background-image: none;
+  	box-shadow: none;
   	border-color: rgb(255, 255, 255) rgb(255, 255, 255);
-  	background-color: rgba(255, 255, 255, 0) rgb(255, 255, 255);
+  	background-color: #9cb0a4;
+
   
+
+}
+.button-apply[type="submit"]:hover {
+
+	font-size: 16px;
+	line-height: 18px;	
+  	border-style: solid;
+  	border-width: 2px;
+  	background-image: none;
+  	box-shadow: none;
+  	color: #323232;
+
+  	border-color: rgb(255, 255, 255) rgb(255, 255, 255);
+  	background-color: #ffffff;
+
+  
+
+}
+.button-apply[type="submit"]:active {
+
+	font-size: 16px;
+	line-height: 18px;	
+  	border-style: solid;
+  	border-width: 2px;
+  	background-image: none; 	
+  	color: #323232;
+  	border-color: rgb(255, 255, 255) rgb(255, 255, 255);
+  	background-color: #eaeaea;
+  	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+
+  
+
 
 }
 /*************************************************************************/
