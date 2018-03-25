@@ -72,17 +72,12 @@ li.site-navigation-list-item {
 шрифт темный*/
 
 
-hr {
-	height: 1px;
-	}
-
-.hr-inner-ice {
-	color: #d1d0ce;
-	width: 128px;
-}
 .hr-basket {
-	color: #cacac7;
-	width: 510px;
+    background-color: #cacac7;
+    border: none;
+    height: 1px;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul.inner-ice {
@@ -99,6 +94,12 @@ ul.inner-ice {
 при наведении на элементы списка(не ссылки) */
 .inner-ice li {
 	padding: 5px;
+}
+.inner-ice li:last-child:hover {
+	border-radius:  0 0 5px 5px; 
+}
+.inner-ice li:first-child:hover {
+	border-radius: 5px 5px 0 0 ; 
 }
 .inner-ice li:hover
  {
@@ -130,13 +131,27 @@ ul.inner-ice {
 /*Новинки жирным шрифтом*/
 .inner-new a {
 	font-weight: bold;
+	
+}
+
+.inner-new {
+	position: relative;
+}
+.inner-new:before {
+	content: '';
+	position: absolute;
+	width: 128px;
+	height: 1px;
+	background-color:#d1d0ce;
+	left: 6px;
+	right: 9px; 
+	bottom: 0px;
 
 }
 
 /*белай фон где список*/
 .inner-ice {
 	width: 143px;
-	height: 169px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
 	
