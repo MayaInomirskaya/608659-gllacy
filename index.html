@@ -8,78 +8,83 @@
     <!--<link href="css/normalize.css" rel="stylesheet">-->
   </head>
   <body class="page-index">
-  	<header class="main-header">
-  		<a class="main-header-logo">
-  			<img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
-  		</a>
-  		<nav class="main-navigation">
-  			<ul class="site-navigation">
-  				<li class="site-navigation-list-item"><a class="inner-link" href="inner.html">Каталог</a>  				
-					<ul class="inner-ice">
-						<li class="inner-new"><a href="inner-new.html">Новинки</a></li>
-						
-						<li class="inner-ice-cream"><a href="inner-creamy.html">Сливочные</a></li>
-						<li class="inner-ice-cream"><a href="inner-sherbet.html">Щербеты</a></li>
-						<li class="inner-ice-cream"><a href="inner-fruit-ice.html">Фруктовый лед</a></li>
-						<li class="inner-ice-cream"><a href="inner-melorin.html">Мелорин</a></li>
-					</ul>
-				</li>	
-  				<li class="site-navigation-list-item"><a class="shipping-and-payment" href="shipping-and-payment.html">Доставка и оплата</a></li>
-  				<li class="site-navigation-list-item"><a class="about-company" href="about-company.html">О Компании</a></li>
-  			</ul>
-  			<ul class="user-navigation">
-  				<li class="navigation-button">
-  					<a class="navigation-link" href="user-search.html" aria-label="Поиск">
-  						<svg class="loupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-  							<path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
-  						</svg>
-  					</a>
-  					<div class="send-form">
-						<form class="send" action="https://echo.htmlacademy.ru" method="post">
-						<input class="input-form-text" class="input-search" type="search" name="search" placeholder="Что ищем?">
-						</form>
-					</div>	
-  				</li>
-  				<li class="navigation-button">
-  					<a class="navigation-link" href="login.html">
-  						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-	  						<g>
-	  							<path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-  								<path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-  							</g>
-  						</svg>Вход
-  					</a>
-  					<form class="input-form" action="https://echo.htmlacademy.ru" method="post">
-						<p class="input-email-link">
-							<label for="email-link" class="visually-hidden">Введите адрес электронной почты</label>
-							<input class="input-form-text" id="email-link" type="email" name="email" placeholder="Электронная почта"/>
-						</p>
-						<p class="input-password-link">
-							<label for="password-link" class="visually-hidden">Введите пароль</label>
-							<input class="input-form-text" id="password-link" type="password" name="password" placeholder="Пароль"/>
-						</p>
-						<button class="red-button" type="submit">Войти</button>
-						<ul class="help">
-							<li><a class="help-password" href="password.html">Забыли пароль?</a></li>
-							<li><a class="help-registrations" href="registrations.html">Новая регистрация</a></li>
+  	<header class="container">
+  		<div class="main-header">
+	  		<a class="main-header-logo">
+	  			<img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
+	  		</a>
+	  		<nav class="main-navigation">
+
+	  			<ul class="site-navigation">
+	  				<li class="site-navigation-list-item"><a class="inner-link" href="inner.html">Каталог</a>  				
+						<ul class="inner-ice">
+							<li class="inner-new"><a href="inner-new.html">Новинки</a></li>
+							
+							<li class="inner-ice-cream"><a href="inner-creamy.html">Сливочные</a></li>
+							<li class="inner-ice-cream"><a href="inner-sherbet.html">Щербеты</a></li>
+							<li class="inner-ice-cream"><a href="inner-fruit-ice.html">Фруктовый лед</a></li>
+							<li class="inner-ice-cream"><a href="inner-melorin.html">Мелорин</a></li>
 						</ul>
-					</form>
-  				</li>
-  				<li class="navigation-button">
-  					<a class="navigation-link" href="box.html"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-		  					<g>
-		  						<path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-		  						<circle cx="6.984" cy="18" r="2"/>
-		  						<circle cx="15.984" cy="18" r="2"/>
-		  					</g>
-	  				</svg>Пусто</a>
-  				</li>
-  			</ul>
-  		</nav>	
-  		<div class="working-time-phone">
-	  		<p class="working-time">С 10 до 20, ежедневно</p>
-	  		<p class="phone">8 812 450-25-25</p>
+					</li>	
+	  				<li class="site-navigation-list-item"><a class="shipping-and-payment" href="shipping-and-payment.html">Доставка и оплата</a></li>
+	  				<li class="site-navigation-list-item"><a class="about-company" href="about-company.html">О Компании</a></li>
+	  			</ul>
+	  			<ul class="user-navigation">
+	  				<li class="navigation-button">
+	  					<a class="navigation-link" href="user-search.html" aria-label="Поиск">
+	  						<svg class="loupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+	  							<path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+	  						</svg>
+	  					</a>
+	  					<div class="send-form">
+							<form class="send" action="https://echo.htmlacademy.ru" method="post">
+							<input class="input-form-text" class="input-search" type="search" name="search" placeholder="Что ищем?">
+							</form>
+						</div>	
+	  				</li>
+	  				<li class="navigation-button">
+	  					<a class="navigation-link" href="login.html">
+	  						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+		  						<g>
+		  							<path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+	  								<path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+	  							</g>
+	  						</svg>Вход
+	  					</a>
+	  					<form class="input-form" action="https://echo.htmlacademy.ru" method="post">
+							<p class="input-email-link">
+								<label for="email-link" class="visually-hidden">Введите адрес электронной почты</label>
+								<input class="input-form-text" id="email-link" type="email" name="email" placeholder="Электронная почта"/>
+							</p>
+							<p class="input-password-link">
+								<label for="password-link" class="visually-hidden">Введите пароль</label>
+								<input class="input-form-text" id="password-link" type="password" name="password" placeholder="Пароль"/>
+							</p>
+							<button class="red-button" type="submit">Войти</button>
+							<ul class="help">
+								<li><a class="help-password" href="password.html">Забыли пароль?</a></li>
+								<li><a class="help-registrations" href="registrations.html">Новая регистрация</a></li>
+							</ul>
+						</form>
+	  				</li>
+	  				<li class="navigation-button">
+	  					<a class="navigation-link" href="box.html"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+			  					<g>
+			  						<path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+			  						<circle cx="6.984" cy="18" r="2"/>
+			  						<circle cx="15.984" cy="18" r="2"/>
+			  					</g>
+		  				</svg>Пусто</a>
+	  				</li>
+	  			</ul>
+	  		</nav>	
 	  	</div>
+	  	<div class="working-time-phone">
+	  		<div class="working-time-phone-block">
+		  		<p class="working-time">С 10 до 20, ежедневно</p>
+		  		<p class="phone">8 812 450-25-25</p>
+		  	</div>
+	  </div>
   	</header>
   	<main class="container">
   		<h1 class="visually-hidden">GllacyShop</h1>
@@ -126,17 +131,21 @@
 		  				<img class="orange-img" src="img/1.jpg" width="200" height="200">
 		  					<img src="img/hit.svg" class="hit">
 		  				<p class="price">310&#8381;<span>/кг</span></p>
-		  				<p class="name-price">Сливочное с апельсинвым джемом и цитрусовой стружкой</p></a>
-		  				
-	  				
+		  				<p class="name-price">
+		  					<a class="orange-link" href="orange.html">Сливочное с апельсинвым джемом и цитрусовой стружкой</a>
+		  				</p>
+		  			</a>
+	  				<a  class="red-button">Быстрый просмотр</a>
 	  			</li>
 	  			<li class="list-item-ice-cream">
 	  				<a class="chocolate-link" href="chocolate.html">
   						<img class="chocolate-img" src="img/2.jpg" width="200" height="200">
 							<img src="img/hit.svg" class="hit">
 	  					<p class="price">380&#8381;<span>/кг</span></p>
-	  					<p class="name-price">Сливочно-кофейное с кусочками шоколада</p>
-	  					
+	  					<p class="name-price">
+	  						<a class="chocolate-link" href="chocolate.html">Сливочно-кофейное с кусочками шоколада</a>
+	  					</p>
+	  					<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
 	  			</li>
 	  			<li class="list-item-ice-cream">
@@ -144,8 +153,10 @@
 	  					<img  class="strawberry-img" src="img/3.jpg" width="200" height="200">
 	  						<img src="img/hit.svg" class="hit">
 	  					<p class="price">355&#8381;<span>/кг</span></p>
-	  					<p class="name-price">Сливочно-клубничное с присыпкой из белого шоколада</p>
-	  					
+	  					<p class="name-price">
+	  						<a class="strawberry-link" href="strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
+	  					</p>
+	  					<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
 	  			</li>
 	  			<li class="list-item-ice-cream">
@@ -153,8 +164,10 @@
 	  					<img class="creme-brulee-img" src="img/4.jpg" width="200" height="200">
 	  						<img src="img/hit.svg" class="hit">
 	  					<p class="price">415&#8381;<span class="small">/кг</span></p>
-	  					<p class="name-price">Сливочное крем-брюле с карамельной подливкой</p>
-	  					
+	  					<p class="name-price">
+	  						<a class="creme-brulee-link" href="creme-brulee.html">Сливочное крем-брюле с карамельной подливкой</a>
+	  					</p>
+	  					<a  class="red-button">Быстрый просмотр</a>
   					</a>
 	  			</li>
 	  		</ul>
@@ -176,33 +189,36 @@
 	  				</li>
 	  			</ul>
 	  	</section>
-	  	<article class="news-blog">
-	  		<p class="news-blog-p">Новое в нашем блоге</p>
-	  		<h2 class="name-blog"><a class="blog-link" href="blog.html">10 способов сервировки фруктовых щербетов</a></h2>
-	  	</article>
-	  	<section class="distribution">
-	  		<div class="distribution-content">
-		  		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-		  		<!-- Форма 😎 -->
-		  		<form class="subscription" action="https://echo.htmlacademy.ru" method="post">
-	  			<p class="subscription-email">
-	  				<label for="subscription-email" class="visually-hidden">Введите электронную почту</label>
-	  				<input id="subscription-email" type="email" name="email" placeholder="Электронная почта">
-	  				<button class="red-button" type="submit">Отправить</button>
-		  		</p>
-	  		</div>
-	  		</form>
-	  	</section>
+		<div class="news-blog-and-distribution">
+		  	<article class="news-blog">
+		  		<p class="news-blog-p">Новое в нашем блоге</p>
+		  		<h2 class="name-blog"><a class="blog-link" href="blog.html">10 способов сервировки фруктовых щербетов</a></h2>
+		  	</article>
+		  	<section class="distribution">
+		  		<div class="distribution-content">
+			  		<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+			  		<!-- Форма 😎 -->
+			  		<form class="subscription" action="https://echo.htmlacademy.ru" method="post">
+		  			<p class="subscription-email">
+		  				<label for="subscription-email" class="visually-hidden">Введите электронную почту</label>
+		  				<input id="subscription-email" type="email" name="email" placeholder="Электронная почта">
+		  				<button class="red-button" type="submit">Отправить</button>
+			  		</p>
+		  		</div>
+		  		</form>
+		  	</section>
+		</div>
 	  	<section class="contacts">
-	  		<p>Адрес главного офиса<br> и офлайн-магазина:<br><b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b></p>
-			<p>Для заказов по телефону:<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
-			<a href="" class="red-button">Форма обратной связи</a>
+	  		<div class="contact">
+		  		<p>Адрес главного офиса<br> и офлайн-магазина:<br><b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b></p>
+				<p>Для заказов по телефону:<br><b>8 812 450-25-25</b><br>(с 10 до 20 ежедневно)</p>
+				<a href="" class="red-button">Форма обратной связи</a>
+			</div>
 		</section>
-		<img src="img/mup1200.jpg">
 	</main>
-	<footer class="maiin-footer">
+	<footer class="maiin-footer container">
 		<div class="social">
-			<ul class="social_networks">
+			<ul class="social-networks">
 				<li class="social-network">
 					<a class="social-button-link" href="#" aria-label="Мы в Твитере">
 						<svg class="social-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path  d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>
@@ -226,6 +242,7 @@
 			</ul>
 		</div>
 		<div class="info-partnership">
+			<img src="img/heart.svg">
 			<ul class="info-partnership-links">
 				<li class="info-partnership-link"><a href="#"><b>Для поставщиков</b></a></li>
 				<li class="info-partnership-link"><a href="#">О производстве</a></li>

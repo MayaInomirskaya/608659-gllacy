@@ -7,7 +7,8 @@
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
-	<header class="main-header">
+	<header class="container">
+		<div class="main-header">
   		<a class="main-header-logo">
   			<img src="img/logo.svg" width="154" height="64" alt="Логотип GllacyShop">
   		</a>
@@ -24,6 +25,7 @@
   							<path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
   						</svg>
   					</a>
+  				</li>
   				<li class="navigation-button">
   					<a class="navigation-link" href="login.html">
   						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
@@ -80,17 +82,22 @@
   				</li>
   			</ul>
   		</nav>	
+  	</div>
   		<div class="working-time-phone">
-	  		<p class="working-time">С 10 до 20, ежедневно</p>
-	  		<p class="phone">8 812 450-25-25</p>
-	  	</div>
+	  		<div class="working-time-phone-block">
+		  		<p class="working-time">С 10 до 20, ежедневно</p>
+		  		<p class="phone">8 812 450-25-25</p>
+		  	</div>
+	  </div>
   	</header>
-  	<main class="catalogue">  		
-		<ul class="way">
-			<li class="way-item"><a class="catalogue-index" href="index.html">Главная</a></li>
-			<li class="way-item"><a class="catalogue-inner" href="inner.html">Каталог</a></li>
-  			<li class="way-item">Сливочное</li>
-		</ul>
+  	<main class="catalogue container">  
+  		<div class="way">	
+			<ul class="way-list">
+				<li class="way-item"><a class="catalogue-index" href="index.html">Главная</a></li>
+				<li class="way-item"><a class="catalogue-inner" href="inner.html">Каталог</a></li>
+	  			<li class="way-item">Сливочное</li>
+			</ul>
+		</div>	
 		<h2 class="head-filter">Сливочное мороженное</h2>
   		<!--Фильтр</h2>-->
   		<section class="filters">
@@ -139,7 +146,7 @@
 		  				<img class="img-orange" src="img/1.jpg" width="200" height="200">
 		  				<p class="price">310&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочное с апельсинвым джемом и цитрусовой стружкой
+		  					<a href="orange.html">Сливочное с апельсинвым джемом и цитрусовой стружкой</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -149,7 +156,7 @@
   						<img src="img/2.jpg" width="200" height="200">
 	  					<p class="price">380&#8381;<span>/кг</span></p>
 	  					<p class="name-price">
-	  					Сливочно-кофейное с кусочками шоколада
+	  						<a href="chocolate.html">Сливочно-кофейное с кусочками шоколада</a>
 	  					</p>
 	  					<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -159,7 +166,7 @@
 	  					<img src="img/3.jpg" width="200" height="200">
 	  					<p class="price">355&#8381;<span>/кг</span></p>
 	  					<p class="name-price">
-	  					Сливочно-клубничное с присыпкой из белого шоколада
+	  						<a href="strawberry.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
 	  					</p>
 	  					<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -169,7 +176,7 @@
 	  					<img src="img/4.jpg" width="200" height="200">
 	  					<p class="price">415&#8381;<span class="small">/кг</span></p>
 	  					<p class="name-price">
-	  					Сливочное крем-брюле с карамельной подливкой
+	  						<a href="creme-brulee.html">Сливочное крем-брюле с карамельной подливкой</a>
 	  					</p>
 	  					<a  class="red-button">Быстрый просмотр</a>
   					</a>
@@ -179,7 +186,7 @@
 		  				<img src="img/1-1.jpg" width="200" height="200">
 		  				<p class="price">325&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочное с брусничным джемом
+		  					<a href="cowberry.html">Сливочное с брусничным джемом</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -189,7 +196,7 @@
 		  				<img src="img/2-1.jpg" width="200" height="200">
 		  				<p class="price">410&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Черничное с цельными ягодами черники
+		  					<a href="blueberry.html">Черничное с цельными ягодами черники</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -199,7 +206,7 @@
 		  				<img src="img/3-1.jpg" width="" height="">
 		  				<p class="price">375&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочно-лимонное с карамельной присыпкой
+		  					<a href="limon.html">Сливочно-лимонное с карамельной присыпкой</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -209,7 +216,7 @@
 		  				<img src="img/4-1.jpg" width="" height="">
 		  				<p class="price">320&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочное с шоколадной стружкой
+		  					<a href="chocolate-chip.html">Сливочное с шоколадной стружкой</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -219,7 +226,7 @@
 		  				<img src="img/1-2.jpg" width="" height="">
 		  				<p class="price">440&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочно-ванильное с кусочками шоколада
+		  					<a href="vanilla.html">Сливочно-ванильное с кусочками шоколада</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -229,7 +236,7 @@
 		  				<img src="img/2-2.jpg" width="" height="">
 		  				<p class="price">435&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочное с ментоловым сиропом
+		  					<a href="menthol.html">Сливочное с ментоловым сиропом</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -239,7 +246,7 @@
 		  				<img src="img/3-2.jpg" width="" height="">
 		  				<p class="price">355&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочное с кусочками черного шоколада
+		  					<a href="black-chocolate.html">Сливочное с кусочками черного шоколада</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
@@ -249,13 +256,14 @@
 		  				<img src="img/4-2.jpg" width="" height="">
 		  				<p class="price">420&#8381;<span>/кг</span></p>
 		  				<p class="name-price">
-		  					Сливочное с мятным сиропом
+		  					<a href="mint.html">Сливочное с мятным сиропом</a>
 		  				</p>
 		  				<a  class="red-button">Быстрый просмотр</a>
 	  				</a>
 	  			</li>
 	  		</ul>
 	  	</div>
+	  	<div class="pagination">
 	  	<ul class="pagination-list">
 	  		<li class="pagination-item">
 	  			<svg xmlns="http://www.w3.org/2000/svg"  width="8" height="12" viewBox="0 0 8 12"> <path fill="#C1C6CE"d="M1,6.3l5.5,5.5c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7l0,0L2.1,6l5.2-5.2c0.2-0.2,0.2-0.5,0-0.7,C7-0.1,6.7-0.1,6.5,0.1L1,5.6C0.8,5.8,0.8,6.1,1,6.3C1,6.3,1,6.3,1,6.3z"/></svg>
@@ -270,8 +278,9 @@
 	  			</svg>
 	  		</li>
 	  	</ul>
+	  </div>
   	</main>
-  	<footer class="maiin-footer">
+  	<footer class="maiin-footer container">
 		<div class="social">
 			<ul class="social-networks">
 				<li class="social-network">
