@@ -31,6 +31,7 @@ body {
 	justify-content: space-between;
 
 
+
 }
 .main-navigation {
 	display: flex;
@@ -67,6 +68,40 @@ body {
 .slide-hidden {
     display: none;
 }
+.slyder {
+	padding-top: 2.2%;
+}
+
+.advertising {
+	padding: 2.2% 0;
+}
+.ice-cream {
+	padding: 2.2% 0;
+}				  	
+.about {
+	padding: 2.2% 0;
+}
+.news-blog-and-distribution {
+	padding-top: 2.2% ;
+}
+.raspberry {
+	margin-right: 2.65%;
+	width: 560px;
+}
+.chocolate {
+	width: 560px;
+	margin-left:  0.55%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -91,9 +126,9 @@ body {
 .slider-controls label:hover {
 	background-color: #b2c1b7;
 }
-#slide-1:checked ~.slider-controls label[for="slide-1"],
-#slide-2:checked ~.slider-controls label[for="slide-2"],
-#slide-3:checked ~.slider-controls label[for="slide-3"]  {
+.slide-1:checked ~.slider-controls label[for="slide-1"],
+.slide-2:checked ~.slider-controls label[for="slide-2"],
+.slide-3:checked ~.slider-controls label[for="slide-3"]  {
 	background-color: #ffffff;
 }
 
@@ -112,6 +147,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	flex-wrap: wrap;
+	padding-top: 2.2%;
 }
 
 .about-us {
@@ -568,9 +604,10 @@ li.list-item-ice-cream {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 267px;
+	width: 22.2%;
 	list-style-type: none;
 	min-height: 290px;
+	padding: 0 1.1%;
 
 
 }
@@ -583,6 +620,10 @@ li.list-item-ice-cream {
   	opacity: 0.9;
 	
 
+}
+.card {
+	width: 100%;
+	height: 100%;
 }
 
 
