@@ -17,11 +17,11 @@ body {
 	width: 1200px;
 	margin: auto;
 	
-}
-.container-min {
-	padding:2.3%;
 	
-
+}
+.content {
+    padding-left: 2.3%;
+    padding-right: 2.3%;
 }
 
 
@@ -75,14 +75,13 @@ body {
 .advertising {
 	padding: 2.2% 0;
 }
-.ice-cream {
-	padding: 2.2% 0;
-}				  	
+				  	
 .about {
 	padding: 2.2% 0;
 }
 .news-blog-and-distribution {
 	padding-top: 2.2% ;
+	
 }
 .raspberry {
 	margin-right: 2.65%;
@@ -147,7 +146,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	flex-wrap: wrap;
-	padding-top: 2.2%;
+	
 }
 
 .about-us {
