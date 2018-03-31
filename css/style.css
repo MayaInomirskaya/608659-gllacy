@@ -14,19 +14,26 @@ body {
 	
 }
 .container {
-	width: 900px;
+	width: 1200px;
 	margin: auto;
+	
 }
+.container-min {
+	padding:2.3%;
+	
+
+}
+
+
+
 .main-header {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 
 
 }
 .main-navigation {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
@@ -34,7 +41,6 @@ body {
 }
 .user-navigation {
 	display: flex;
-	flex-direction: row;
 	padding: 0;
 	align-items: center;
 	margin: 0;
@@ -42,7 +48,6 @@ body {
 
 .site-navigation {
 	display: flex;
-	flex-direction: row;
 	padding: 0;
 	margin: 0;
 }
@@ -55,14 +60,46 @@ body {
 	display: flex;
 	flex-direction: row-reverse;
 }
-.slide1 {
-	display: block;
-	margin-top: 200px;
+.slide {
+    display: block;
+    margin-top: 200px;
+} 
+.slide-hidden {
+    display: none;
 }
+
+
+
+
+.switch-slide input[type=radio] {
+    display: none;
+}
+
+
+
+.slider-controls label {
+	display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin: 0 3px;
+    background-color: #8ca698;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.slider-controls label:hover {
+	background-color: #b2c1b7;
+}
+#slide-1:checked ~.slider-controls label[for="slide-1"],
+#slide-2:checked ~.slider-controls label[for="slide-2"],
+#slide-3:checked ~.slider-controls label[for="slide-3"]  {
+	background-color: #ffffff;
+}
+
 
 .ul-advertising {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	padding: 0px;
 	margin: 0px;
@@ -78,7 +115,7 @@ body {
 }
 
 .about-us {
-	width: 900px;
+	
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
@@ -90,6 +127,7 @@ body {
 .news-blog-and-distribution {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .contact {
@@ -99,8 +137,6 @@ body {
 }
 .maiin-footer {
 	display: flex;
-	padding-top: 36px;
-	padding-bottom: 36px;
 	justify-content: space-between;
 	height: 60px;
 	align-items: center;
@@ -136,13 +172,11 @@ body {
 
 .filter {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 .title-list-radio {
 	display: flex;
-	flex-direction: row;
 	margin: 0;
 	padding: 0;
 	justify-content: space-between;
@@ -150,7 +184,6 @@ body {
 
 .title-list-checkbox {
 	display: flex;
-	flex-direction: row;
 	margin: 0;
 	padding: 0;
 	justify-content: space-between;
@@ -191,7 +224,7 @@ li.site-navigation-list-item {
 обычное состояние */
 .site-navigation-list-item>a {
 	line-height: 18px;
-	padding: 9px 14px;
+	padding: 7px 13px;
 	color: #ffffff;
 	
 }
@@ -203,7 +236,7 @@ li.site-navigation-list-item {
 	color: #323232;
 	text-decoration: none;
 	line-height: 18px;
-	padding: 11px 14px;
+	padding: 7px 13px;
 	border-radius: 21px;
 
 }
@@ -228,16 +261,25 @@ li.site-navigation-list-item {
     padding: 0px;
 }
 
-ul.inner-ice {
-	display: none;            /*************************************************************************************************************************/
+.site-navigation .inner-ice {
+	position: absolute;
+	display: none;  
+	margin-top: 12px;          /*************************************************************************************************************************/
 }
+.site-navigation>li:hover .inner-ice{
+	display: block;
+}
+
+
  ul.inner-ice{
 	list-style-type: none;
 	padding-bottom: 0;
 	padding-left: 0;
 	margin: 0;
 }
-
+ul.inner-ice:hover {
+	display: block;
+}
 /*Новинки Сливочные Щербеты Фруктовый лед Мелорин
 при наведении на элементы списка(не ссылки) */
 .inner-ice li {
@@ -320,6 +362,13 @@ li.navigation-button {
 	text-decoration: none;
 
 } 
+.loupe {           
+	padding: 8px;
+	padding-bottom: 3px;
+	padding-top: 10px;
+	border-radius: 50%;
+
+} 
 .navigation-link {
 	background-color: #b0c0b7;
 	color: #ffffff;
@@ -367,6 +416,7 @@ ul.slides {
 .slide-h3 {
 	font-size: 60px;
 	line-height: 60.35px;
+	text-align: center;
 }
 
 .slide2, .slide3 {
@@ -385,12 +435,14 @@ ul.slides {
 	border-radius: 50px;
 	outline: none;
 	text-decoration: none;
+	padding: 9px 13px;
+	justify-content: center;
 	 
   
 }
 
 .red-button:hover {
-    background-image: linear-gradient( rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    background: linear-gradient(to bottom,#f58669 0%,#ec6f5e 100%);
 	color: #ffffff;
 	border: 0px;
 	font-size: 18px;
@@ -446,6 +498,9 @@ button.button-slider  {
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: bold;
+	padding: 13px 21px;
+	display: block;
+	margin: auto;
 
 
 
@@ -469,13 +524,14 @@ button.button-slider:active {
 
 
 
-
-
 .ice-cream img {
 	border-radius: 50%;
 } 
 
 /**************************************************************/
+.name-price {
+	text-align: center;
+}
 .name-price a {
 	
 	color: #ffffff;
@@ -493,27 +549,57 @@ button.button-slider:active {
 /********************************************************************hit*************************************************/
 
 
-.strawberry-img {
+.quick-view {
+	display: none;
+	min-width: 168px;
+	margin: auto;
+}
+.quick-view:hover {
+	
+	margin: auto;
+}
+.list-item-ice-cream:hover .quick-view {
+	display: block;
 
+	
 }
 li.list-item-ice-cream {
 	position: relative;
-	display: block;
-	width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 267px;
 	list-style-type: none;
+	min-height: 290px;
+
 
 }
 .list-item-ice-cream:hover {
 	position: relative;
 	background-color: #9db1a5;
 }
+
+.list-item-ice-cream:hover{
+  	opacity: 0.9;
+	
+
+}
+
+
+
+
+
+
+
+
 .price {
 	position: absolute;
-	bottom: 60px;
+	top: 217px;
 	color: #ffffff;
 	font-size: 45px;
 	font-weight: bold;
 	line-height: 1;
+	margin:0;
 }
 
 .hit {
@@ -541,20 +627,18 @@ ul.ul-advertising {
 }
 .raspberry {
 	background-image: url(../img/raspberry.jpg);
-	width: 420px;
-	height: 229px;
+	background-repeat: no-repeat;
+	min-height: 230px;
 }
 .chocolate {
 	background-image: url(../img/chocolate.jpg);
-	width: 420px;
-	height: 229px;
+	background-repeat: no-repeat;
 }
 
 
 .about {
 	background-image: url(../img/waffle.jpg);
-	width: 900px;
-
+	
 }
 .about h3 {
 	font-size: 24px;
@@ -569,12 +653,14 @@ ul.ul-advertising {
 }
 li.about-list-item {
 	list-style-type: none;
-	width: 380px;
+	width: 533px;
 }
 .news-blog {
-	background-image: url(../img/blog.jpg);
-	width: 420px;
-	height: 220px;
+	background-image: url(../img/blog-1200.jpg);
+	background-repeat: no-repeat;
+	width: 560px;
+	min-height: 220px;
+	
 }
 .news-blog a{
 	color: #353535;
@@ -589,15 +675,17 @@ li.about-list-item {
 }
 .distribution-content {
 	background-color: #f8f7f4;
+	width: 560px;
+	min-height: 220px;
 }
 .distribution {
-	width: 420px;
-	height: 220px;
+	
 }
 .distribution p
 {
 	color: #5a5a5a;
 	font-weight: normal;
+
 }
 
 .contacts
@@ -608,8 +696,8 @@ li.about-list-item {
 	color: #323232;
 	font-weight: normal;
 	background-color: #fefefe;
-	width: 900px;
-	height: 430px;
+	
+	min-height: 430px;
 	display: flex;
 	flex-direction: row-reverse;
 }
@@ -653,8 +741,7 @@ li.social-network {
 	margin: 0px;
 	padding: 0px;
 	display: flex;
-	flex-direction: row;
-	width: 326px;
+	width: 328px;
 	flex-wrap: wrap;
 	
 }
